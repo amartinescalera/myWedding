@@ -14,14 +14,20 @@
 
 get_header(); ?>
 
-Donde quedarse
-Como llegar
-	<div id="primary" class="content-area sidebar">
-		<main id="main" class="site-main">
-			Hello it's me
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+            En este rincón virtual, te damos la bienvenida a nuestra página nupcial, un espacio donde cada clic revela un
+            fragmento de nuestra historia de amor. Aquí, compartimos con alegría los momentos especiales, las risas compartidas
+            y los sueños tejidos juntos. Que este pequeño rincón digital sea un reflejo de la grandeza de nuestro compromiso
+            mutuo, un testimonio vivo de nuestra unión eterna. Gracias por ser parte de nuestro viaje, donde el amor es el camino
+            y el destino. Bienvenidos, queridos amigos y familiares, a este mundo de amor y felicidad que hemos creado juntos.
+            Para más preguntas o dudas no dudeis en contactar con nosotros:
+            <ul>
+                <li>Antonio: 616 845 513</li>
+                <li>Carmina: 616 067 928</li>
+            </ul>
+        </main><!-- #main -->
+    </div><!-- #primary -->
 
 <?php
 //get_sidebar();

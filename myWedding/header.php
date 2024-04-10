@@ -84,48 +84,61 @@
 						<?php if ( get_theme_mod( 'newlyweds_details_subtitle_one' ) ) { ?>
 							<div class="subsection">
 								<h3 class="subsection-title">
-									<?php
-									if ( get_theme_mod( 'newlyweds_details_subtitle_one' ) ) {
-										echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_one' ));
-									} ?>
+                                    <a href="http://carmina.antoniomartin.info/ceremonia/">
+                                        <?php
+                                        if ( get_theme_mod( 'newlyweds_details_subtitle_one' ) ) {
+                                            echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_one' ));
+                                        } ?>
+                                    </a>
 								</h3>
 								<div class="subsection-text">
 									<?php
 									if ( get_theme_mod( 'newlyweds_details_text_one' ) ) {
 										$a = esc_html(get_theme_mod( 'newlyweds_details_text_one' ));
 										echo nl2br( $a );
-										echo "Más Información";
 									} ?>
 								</div>
+                                <div class="subsection-text">
+                                    <?php
+                                    if ( get_theme_mod( 'newlyweds_details_link_one' ) ) {
+                                        $a = esc_html(get_theme_mod( 'newlyweds_details_link_one' ));
+                                        echo nl2br( $a );
+                                    } ?>
+                                </div>
 							</div>
 						<?php } ?>
 
 						<?php if ( get_theme_mod( 'newlyweds_details_subtitle_two' ) ) { ?>
 							<div class="subsection">
 								<h3 class="subsection-title">
-									<?php
-									if ( get_theme_mod( 'newlyweds_details_subtitle_two' ) ) {
-										echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_two' ));
-									} ?>
+                                    <a href="http://carmina.antoniomartin.info/celebracion/">
+                                        <?php
+                                        if ( get_theme_mod( 'newlyweds_details_subtitle_two' ) ) {
+                                            echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_two' ));
+                                        } ?>
+                                    </a>
 								</h3>
 								<div class="subsection-text">
 									<?php
 									if ( get_theme_mod( 'newlyweds_details_text_two' ) ) {
 										$b = esc_html(get_theme_mod( 'newlyweds_details_text_two' ));
 										echo nl2br( $b );
-										echo "Más Información";
 									} ?>
 								</div>
 							</div>
 						<?php } ?>
+                    </div>
 
+                    <div class="subsection-wrapper">
 						<?php if ( get_theme_mod( 'newlyweds_details_subtitle_three' ) ) { ?>
 							<div class="subsection">
 								<h3 class="subsection-title">
-									<?php
-									if ( get_theme_mod( 'newlyweds_details_subtitle_three' ) ) {
-										echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_three' ));
-									} ?>
+                                    <a href="http://carmina.antoniomartin.info/guia/">
+                                        <?php
+                                        if ( get_theme_mod( 'newlyweds_details_subtitle_three' ) ) {
+                                            echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_three' ));
+                                        } ?>
+                                    </a>
 								</h3>
 								<div class="subsection-text">
 									<?php
@@ -136,14 +149,18 @@
 								</div>
 							</div>
 						<?php } ?>
+                    </div>
 
+                    <div class="subsection-wrapper">
 						<?php if ( get_theme_mod( 'newlyweds_details_subtitle_four' ) ) { ?>
 							<div class="subsection">
 								<h3 class="subsection-title">
-									<?php
-									if ( get_theme_mod( 'newlyweds_details_subtitle_four' ) ) {
-										echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_four' ));
-									} ?>
+                                    <a href="http://carmina.antoniomartin.info/hoteles/">
+                                        <?php
+                                        if ( get_theme_mod( 'newlyweds_details_subtitle_four' ) ) {
+                                            echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_four' ));
+                                        } ?>
+                                    </a>
 								</h3>
 								<div class="subsection-text">
 									<?php
@@ -158,10 +175,12 @@
 						<?php if ( get_theme_mod( 'newlyweds_details_subtitle_five' ) ) { ?>
 							<div class="subsection">
 								<h3 class="subsection-title">
-									<?php
-									if ( get_theme_mod( 'newlyweds_details_subtitle_five' ) ) {
-										echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_five' ));
-									} ?>
+                                    <a href="http://carmina.antoniomartin.info/faq/">
+                                        <?php
+                                        if ( get_theme_mod( 'newlyweds_details_subtitle_five' ) ) {
+                                            echo esc_html(get_theme_mod( 'newlyweds_details_subtitle_five' ));
+                                        } ?>
+                                    </a>
 								</h3>
 								<div class="subsection-text">
 									<?php
@@ -181,3 +200,35 @@
 		<?php } ?>
 
 		<div id="content" class="site-content">
+            <ul class="social-buttons">
+                <?php if ( get_theme_mod( 'newlyweds_social_media_twitter' ) ) { ?>
+                    <div>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_twitter' ) ); ?>"><i class="fa fa-twitter"></i></a>
+                    </div>
+                <?php } ?>
+                <?php if ( get_theme_mod( 'newlyweds_social_media_facebook' ) ) { ?>
+                    <li>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_facebook' ) ); ?>"><i class="fa fa-facebook"></i></a>
+                    </li>
+                <?php } ?>
+                <?php if ( get_theme_mod( 'newlyweds_social_media_instagram' ) ) { ?>
+                    <li>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_instagram' ) ); ?>"><i class="fa fa-instagram"></i></a>
+                    </li>
+                <?php } ?>
+                <?php if ( get_theme_mod( 'newlyweds_social_media_snapchat' ) ) { ?>
+                    <li>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_snapchat' ) ); ?>"><i class="fa fa-snapchat-ghost"></i></a>
+                    </li>
+                <?php } ?>
+                <?php if ( get_theme_mod( 'newlyweds_social_media_youtube' ) ) { ?>
+                    <li>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_youtube' ) ); ?>"><i class="fa fa-youtube-play"></i></a>
+                    </li>
+                <?php } ?>
+                <?php if ( get_theme_mod( 'newlyweds_social_media_googleplus' ) ) { ?>
+                    <li>
+                        <a href="<?php echo esc_url( get_theme_mod( 'newlyweds_social_media_googleplus' ) ); ?>"><i class="fa fa-google-plus"></i></a>
+                    </li>
+                <?php } ?>
+            </ul>
